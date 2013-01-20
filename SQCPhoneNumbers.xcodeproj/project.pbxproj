@@ -21,6 +21,9 @@
 		E73F921216A6F55300C45B54 /* CityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E73F921116A6F55300C45B54 /* CityTableViewController.m */; };
 		E73F921516A6F5CD00C45B54 /* CityDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E73F921416A6F5CD00C45B54 /* CityDataSource.m */; };
 		E73F921816A6F61A00C45B54 /* FindNumberDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E73F921716A6F61A00C45B54 /* FindNumberDataSource.m */; };
+		E73F923B16AC12B200C45B54 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E73F923A16AC12B200C45B54 /* Reachability.m */; };
+		E73F924E16AC33D900C45B54 /* MP_AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = E73F924D16AC33D900C45B54 /* MP_AlertView.m */; };
+		E73F925016AC35DB00C45B54 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73F924F16AC35DB00C45B54 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,11 @@
 		E73F921416A6F5CD00C45B54 /* CityDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityDataSource.m; sourceTree = "<group>"; };
 		E73F921616A6F61A00C45B54 /* FindNumberDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindNumberDataSource.h; sourceTree = "<group>"; };
 		E73F921716A6F61A00C45B54 /* FindNumberDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindNumberDataSource.m; sourceTree = "<group>"; };
+		E73F923916AC12B200C45B54 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = SQCPhoneNumbers/Reachability.h; sourceTree = "<group>"; };
+		E73F923A16AC12B200C45B54 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = SQCPhoneNumbers/Reachability.m; sourceTree = "<group>"; };
+		E73F924C16AC33D900C45B54 /* MP_AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MP_AlertView.h; path = SQCPhoneNumbers/MP_AlertView.h; sourceTree = "<group>"; };
+		E73F924D16AC33D900C45B54 /* MP_AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MP_AlertView.m; path = SQCPhoneNumbers/MP_AlertView.m; sourceTree = "<group>"; };
+		E73F924F16AC35DB00C45B54 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E73F925016AC35DB00C45B54 /* SystemConfiguration.framework in Frameworks */,
 				E73F91EF16A6F14000C45B54 /* UIKit.framework in Frameworks */,
 				E73F91F116A6F14000C45B54 /* Foundation.framework in Frameworks */,
 				E73F91F316A6F14000C45B54 /* CoreGraphics.framework in Frameworks */,
@@ -65,6 +74,11 @@
 		E73F91DF16A6F14000C45B54 = {
 			isa = PBXGroup;
 			children = (
+				E73F924F16AC35DB00C45B54 /* SystemConfiguration.framework */,
+				E73F924C16AC33D900C45B54 /* MP_AlertView.h */,
+				E73F924D16AC33D900C45B54 /* MP_AlertView.m */,
+				E73F923916AC12B200C45B54 /* Reachability.h */,
+				E73F923A16AC12B200C45B54 /* Reachability.m */,
 				E73F91F416A6F14000C45B54 /* SQCPhoneNumbers */,
 				E73F91ED16A6F14000C45B54 /* Frameworks */,
 				E73F91EB16A6F14000C45B54 /* Products */,
@@ -194,6 +208,8 @@
 				E73F921216A6F55300C45B54 /* CityTableViewController.m in Sources */,
 				E73F921516A6F5CD00C45B54 /* CityDataSource.m in Sources */,
 				E73F921816A6F61A00C45B54 /* FindNumberDataSource.m in Sources */,
+				E73F923B16AC12B200C45B54 /* Reachability.m in Sources */,
+				E73F924E16AC33D900C45B54 /* MP_AlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +236,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: sun qichao (7HXJEK73Z8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sun qichao (7HXJEK73Z8)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -235,6 +252,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "93011B8D-3BF7-4CD2-B890-956EFB95E4B7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "93011B8D-3BF7-4CD2-B890-956EFB95E4B7";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -249,7 +268,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: sun qichao (7HXJEK73Z8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: sun qichao (7HXJEK73Z8)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -257,6 +277,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "93011B8D-3BF7-4CD2-B890-956EFB95E4B7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "93011B8D-3BF7-4CD2-B890-956EFB95E4B7";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Reachability.h"
+#define REACHABLE @"网络已连接"
+#define UNREACHABLE @"网络断开"
+
+
 
 @interface FindViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *shengfen;
